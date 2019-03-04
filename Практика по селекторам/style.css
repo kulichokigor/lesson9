@@ -1,0 +1,92 @@
+
+/* Практика по селекторам */
+
+ul{
+	list-style: none;
+}
+
+li{
+	border: 1px solid;
+	margin: 5px;
+	text-align: center;
+	width: 150px;
+	line-height: 20px;
+}
+
+
+/* 39 * - для роботи поставте) "/"
+li:hover, li:hover + li{
+	color: white;
+}
+
+li:hover + li{
+	background: red;
+
+}
+
+li:hover{
+	background: green;
+}
+
+
+
+/* 40 *
+li:hover, li:hover + li + li{
+	color: white;
+}
+
+li:hover + li + li{
+	background: red;
+
+}
+
+li:hover{
+	background: green;
+}
+
+
+
+/*41*
+li:hover, li:hover ~ li{
+	color: white;
+}
+
+li:hover ~ li{
+	background: red;
+
+}
+
+li:hover{
+	background: green;
+}
+
+
+
+/*42*
+li:hover, li:hover ~ li:not(:last-child){
+	color: white;
+}
+
+li:hover ~ li:not(:last-child){
+		background: red;
+}
+
+li:hover{
+	background: green;
+}
+
+
+
+/*43*/
+
+li:hover, li:hover ~ li:not(:nth-child(even)){
+	color: white;
+}
+
+li:hover ~ li:not(:nth-child(even)){
+	background: red;
+}
+
+li:hover{
+	background: green;
+}
